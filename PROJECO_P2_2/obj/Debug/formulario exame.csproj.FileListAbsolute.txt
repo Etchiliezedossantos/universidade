@@ -1,0 +1,11 @@
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\bin\Debug\formulario exame.exe.config
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\bin\Debug\formulario exame.exe
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\bin\Debug\formulario exame.pdb
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario exame.csproj.AssemblyReference.cache
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario_exame.Form1.resources
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario_exame.Form2.resources
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario_exame.Properties.Resources.resources
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario exame.csproj.GenerateResource.cache
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario exame.csproj.CoreCompileInputs.cache
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario exame.exe
+C:\Users\ANDREA-LUÍS\Desktop\projects Drea\formulario exame\obj\Debug\formulario exame.pdb

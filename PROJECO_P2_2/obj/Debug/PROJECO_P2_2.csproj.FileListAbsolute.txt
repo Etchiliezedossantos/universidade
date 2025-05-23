@@ -1,0 +1,17 @@
+A:\NOVO\PROJECO_P2_2\bin\Debug\PROJECO_P2_2.exe.config
+A:\NOVO\PROJECO_P2_2\bin\Debug\PROJECO_P2_2.exe
+A:\NOVO\PROJECO_P2_2\bin\Debug\PROJECO_P2_2.pdb
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.csproj.AssemblyReference.cache
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_principal.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Properties.Resources.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.csproj.GenerateResource.cache
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.csproj.CoreCompileInputs.cache
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.exe
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.pdb
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_datas.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_perfil.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_sobre.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova1_matematica_.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova2__matematica.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova_F1.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_PROVAF2.resources
