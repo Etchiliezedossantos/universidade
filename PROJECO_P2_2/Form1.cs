@@ -39,22 +39,7 @@ namespace PROJECO_P2_2
             Application.Exit();//fechar a aplicacao
            
            }
-        private void BTTN_max_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            BTTN_max.Visible = true;//pesquisa e comenta a funcao depois faz foto e manda no grupo
-            BTTN_max.Visible = false;
-
-
-
-        }
-
-        private void BTN_rest_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            BTN_rest.Visible = true;//pesquisa e comenta a funcao depois faz foto e manda no grupo
-            BTN_rest.Visible = false;
-        }
+       
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

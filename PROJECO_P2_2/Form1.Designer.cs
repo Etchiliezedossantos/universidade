@@ -38,10 +38,6 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.Link_perfil = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BTN_rest = new System.Windows.Forms.PictureBox();
-            this.BTN_fechar = new System.Windows.Forms.PictureBox();
-            this.BTTN_max = new System.Windows.Forms.PictureBox();
-            this.BTN_min = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.atualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,10 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_rest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_fechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTTN_max)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_min)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,59 +167,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // BTN_rest
-            // 
-            this.BTN_rest.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.BTN_rest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_rest.Image = global::PROJECO_P2_2.Properties.Resources.BTTN_max;
-            this.BTN_rest.Location = new System.Drawing.Point(935, 25);
-            this.BTN_rest.Name = "BTN_rest";
-            this.BTN_rest.Size = new System.Drawing.Size(20, 20);
-            this.BTN_rest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BTN_rest.TabIndex = 4;
-            this.BTN_rest.TabStop = false;
-            this.BTN_rest.Click += new System.EventHandler(this.BTN_rest_Click);
-            // 
-            // BTN_fechar
-            // 
-            this.BTN_fechar.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.BTN_fechar.BackgroundImage = global::PROJECO_P2_2.Properties.Resources.BTN_fechar1;
-            this.BTN_fechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTN_fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_fechar.Location = new System.Drawing.Point(960, 25);
-            this.BTN_fechar.Name = "BTN_fechar";
-            this.BTN_fechar.Size = new System.Drawing.Size(20, 20);
-            this.BTN_fechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BTN_fechar.TabIndex = 3;
-            this.BTN_fechar.TabStop = false;
-            this.BTN_fechar.Click += new System.EventHandler(this.BTN_fechar_Click);
-            // 
-            // BTTN_max
-            // 
-            this.BTTN_max.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.BTTN_max.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTTN_max.Image = global::PROJECO_P2_2.Properties.Resources.BTN_MAX1;
-            this.BTTN_max.Location = new System.Drawing.Point(910, 25);
-            this.BTTN_max.Name = "BTTN_max";
-            this.BTTN_max.Size = new System.Drawing.Size(20, 20);
-            this.BTTN_max.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BTTN_max.TabIndex = 2;
-            this.BTTN_max.TabStop = false;
-            this.BTTN_max.Click += new System.EventHandler(this.BTTN_max_Click);
-            // 
-            // BTN_min
-            // 
-            this.BTN_min.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.BTN_min.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_min.Image = global::PROJECO_P2_2.Properties.Resources.BTN_min;
-            this.BTN_min.Location = new System.Drawing.Point(887, 25);
-            this.BTN_min.Name = "BTN_min";
-            this.BTN_min.Size = new System.Drawing.Size(20, 20);
-            this.BTN_min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BTN_min.TabIndex = 1;
-            this.BTN_min.TabStop = false;
-            this.BTN_min.Click += new System.EventHandler(this.BTN_min_Click);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -295,12 +234,8 @@
             this.ContextMenuStrip = this.contextMenuStrip2;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.BTN_rest);
-            this.Controls.Add(this.BTN_fechar);
             this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.BTTN_max);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.BTN_min);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.linkLabel3);
@@ -308,7 +243,7 @@
             this.Controls.Add(this.BTN_iniciarT);
             this.Controls.Add(this.Link_perfil);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "F_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_principal1";
@@ -317,10 +252,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_rest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_fechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTTN_max)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BTN_min)).EndInit();
             this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -345,10 +276,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox BTN_rest;
-        private System.Windows.Forms.PictureBox BTN_fechar;
-        private System.Windows.Forms.PictureBox BTTN_max;
-        private System.Windows.Forms.PictureBox BTN_min;
     }
 }
 
