@@ -20,10 +20,7 @@ namespace PROJECO_P2_2
 
         private void BN_enu_Click(object sender, EventArgs e)
         {
-            if (Menu_v.Width == 250) { 
-                Menu_v.Width = 63;
-            }
-            else Menu_v.Width = 250;//CONDICAO PARA O BOTAO DO MENU
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
