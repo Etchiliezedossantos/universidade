@@ -32,5 +32,16 @@ namespace PROJECO_P2_2
             Prova2__matematica forulario = new Prova2__matematica();
             forulario.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Prova_F1 Fisica = new Prova_F1();
+            Fisica.Show();
+        }
+
+        private void Prova1_matematica__FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

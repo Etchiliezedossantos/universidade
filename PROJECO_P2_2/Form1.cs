@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 //using formulario_exame;
 
 namespace PROJECO_P2_2
@@ -34,8 +35,50 @@ namespace PROJECO_P2_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Prova1_matematica_ Forulario = new Prova1_matematica_();
-            Forulario.Show();
+            string estadoCandidato = "";
+
+            try
+            {
+                Conexao conexaoBD = new Conexao();
+                using (MySqlConnection conn = conexaoBD.Abrir())
+                {
+                    string sql = "SELECT Estado FROM candidatos WHERE Id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", SessaoUsuario.Id);
+
+                    object resultado = cmd.ExecuteScalar();
+
+                    if (resultado != null)
+                    {
+                        estadoCandidato = resultado.ToString();
+
+                        if (estadoCandidato == "Inscrito")
+                        {
+                            // Permitir iniciar o teste
+                            Prova1_matematica_ telaProva = new Prova1_matematica_();
+                            telaProva.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Você já realizou o teste. Não é possível fazer novamente.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Candidato não encontrado.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao verificar estado do candidato: " + ex.Message);
+            }
+
+
+
+            //Prova1_matematica_ Forulario = new Prova1_matematica_();
+            //Forulario.Show();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

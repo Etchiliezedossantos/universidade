@@ -35,7 +35,8 @@ namespace PROJECO_P2_2
                 Conexao conexaoBD = new Conexao();
                 using (MySqlConnection conn = conexaoBD.Abrir())
                 {
-                    string sqlFuncionario = "SELECT * FROM funcionario WHERE Nome = @nome AND Senha = @senha";
+                    //tentar login com funcionario
+                    string sqlFuncionario = "SELECT * FROM funcionarios WHERE Usuario = @nome AND Senha = @senha";
                     MySqlCommand cmdFuncionario = new MySqlCommand(sqlFuncionario, conn);
                     cmdFuncionario.Parameters.AddWithValue("@nome", nome);
                     cmdFuncionario.Parameters.AddWithValue("@senha", senha);
@@ -50,11 +51,14 @@ namespace PROJECO_P2_2
 
                             reader.Close(); // Fechar antes de usar nova query
 
+                            F_principal telaHome = new F_principal();
+                            telaHome.Show();
+                            this.Hide();
                             // Abrir tela de funcionário
                             //F_HomeFuncionario telaFuncionario = new F_HomeFuncionario(); // tela para o admin
                             //telaFuncionario.Show();
                             //this.Hide();
-                            //return;
+                            return;
                         }
                     }
 
@@ -62,7 +66,7 @@ namespace PROJECO_P2_2
 
 
 
-
+                    //tentar Login com candidato
                     string sqlCandidato = "SELECT * FROM candidatos WHERE NomeCompleto = @nome AND Senha = @senha";
                     MySqlCommand cmdCandidato = new MySqlCommand(sqlCandidato, conn);
                     cmdCandidato.Parameters.AddWithValue("@nome", nome);
