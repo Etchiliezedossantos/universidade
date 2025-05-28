@@ -18,37 +18,18 @@ namespace PROJECO_P2_2
             InitializeComponent();
         }
 
-        private void BN_enu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BTN_min_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;//pesquisa e comenta a funcao depois faz foto e manda no grupo
-        }
-
-        private void BTN_fechar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Tens a certeza que tu ques fechar a aplicação?", "sair", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);//temos ue criar uma condicao para quando o ususario clicar em cancelar nao feche
-            Application.Exit();//fechar a aplicacao
-           
-           }
        
-
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();//tem que chamar o formulario de login na minha opniao
-        }
+            // Limpar os dados da sessão
+            SessaoUsuario.limpar();
 
-        private void Menu_v_Paint(object sender, PaintEventArgs e)
-        {
+            // Abrir a tela de login novamente
+            F_login telaLogin = new F_login();
+            telaLogin.Show();
 
+            // Fechar a tela atual
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,12 +44,7 @@ namespace PROJECO_P2_2
             formularo.Show();
         }
 
-        private void BYN_perfil_Click(object sender, EventArgs e)
-        {
-         F_perfil formularo = new F_perfil();
-            formularo.Show();
-        }
-
+        
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             F_perfil formularo = new F_perfil();
@@ -81,24 +57,7 @@ namespace PROJECO_P2_2
             formularo.Show();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            F_perfil formularo = new F_perfil();
-            formularo.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            F_sobre formularo = new F_sobre();
-            formularo.Show();
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            F_sobre formularo = new F_sobre();
-            formularo.Show();
-        }
-
+       
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             F_sobre formularo = new F_sobre();
@@ -111,16 +70,14 @@ namespace PROJECO_P2_2
             formularo.Show();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void F_principal_Load(object sender, EventArgs e)
         {
-            F_datas formularo = new F_datas();
-            formularo.Show();
+
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void F_principal_FormClosed_1(object sender, FormClosedEventArgs e)
         {
-            F_datas formularo = new F_datas();
-            formularo.Show();
+            Application.Exit();
         }
     }
 }

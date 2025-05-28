@@ -16,7 +16,7 @@ namespace PROJECO_P2_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_principal());
+            Application.Run(new F_login());
         }
     }
 }
