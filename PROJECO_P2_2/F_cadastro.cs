@@ -107,7 +107,9 @@ namespace PROJECO_P2_2
             }
         }
 
+        private void F_cadastro_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

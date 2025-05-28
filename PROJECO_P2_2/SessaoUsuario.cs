@@ -13,6 +13,9 @@ namespace PROJECO_P2_2
         public static string NumeroBI { get; set; }
         public static string Periodo { get; set; }
         public static string Senha { get; set; }
+        public static string Estado { get; set; }
+        public static bool IsFuncionario { get; set; }
+
 
         public static void limpar()
         {
@@ -21,6 +24,8 @@ namespace PROJECO_P2_2
             NumeroBI = null;
             Periodo = null;
             Senha = null;
+            Estado = null;
+            IsFuncionario = false;
         }
     }
 }

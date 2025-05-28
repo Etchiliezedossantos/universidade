@@ -35,12 +35,40 @@ namespace PROJECO_P2_2
                 Conexao conexaoBD = new Conexao();
                 using (MySqlConnection conn = conexaoBD.Abrir())
                 {
-                    string sql = "SELECT * FROM candidatos WHERE NomeCompleto = @nome AND Senha = @senha";
-                    MySqlCommand cmd = new MySqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@nome", nome);
-                    cmd.Parameters.AddWithValue("@senha", senha);
+                    string sqlFuncionario = "SELECT * FROM funcionario WHERE Nome = @nome AND Senha = @senha";
+                    MySqlCommand cmdFuncionario = new MySqlCommand(sqlFuncionario, conn);
+                    cmdFuncionario.Parameters.AddWithValue("@nome", nome);
+                    cmdFuncionario.Parameters.AddWithValue("@senha", senha);
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    using (MySqlDataReader reader = cmdFuncionario.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            SessaoUsuario.Id = Convert.ToInt32(reader["Id"]);
+                            SessaoUsuario.NomeCompleto = reader["Nome"].ToString();
+                            SessaoUsuario.IsFuncionario = true;
+
+                            reader.Close(); // Fechar antes de usar nova query
+
+                            // Abrir tela de funcionário
+                            //F_HomeFuncionario telaFuncionario = new F_HomeFuncionario(); // tela para o admin
+                            //telaFuncionario.Show();
+                            //this.Hide();
+                            //return;
+                        }
+                    }
+
+
+
+
+
+
+                    string sqlCandidato = "SELECT * FROM candidatos WHERE NomeCompleto = @nome AND Senha = @senha";
+                    MySqlCommand cmdCandidato = new MySqlCommand(sqlCandidato, conn);
+                    cmdCandidato.Parameters.AddWithValue("@nome", nome);
+                    cmdCandidato.Parameters.AddWithValue("@senha", senha);
+
+                    using (MySqlDataReader reader = cmdCandidato.ExecuteReader())
                     {
 
                         if (reader.Read())
