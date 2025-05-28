@@ -59,6 +59,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_cadastro.Designer.cs">
+      <DependentUpon>F_cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_login.Designer.cs">
+      <DependentUpon>F_login.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_PROVAF2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_cadastro.resx">
+      <DependentUpon>F_cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_login.resx">
+      <DependentUpon>F_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_PROVAF2.resx">
       <DependentUpon>F_PROVAF2.cs</DependentUpon>
@@ -275,6 +293,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTN_E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TELA DE LOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tela cadasro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bn_cadastro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

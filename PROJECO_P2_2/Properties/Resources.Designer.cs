@@ -63,6 +63,16 @@ namespace PROJECO_P2_2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4 {
             get {
                 object obj = ResourceManager.GetObject("4", resourceCulture);
@@ -96,6 +106,16 @@ namespace PROJECO_P2_2.Properties {
         internal static System.Drawing.Bitmap _8 {
             get {
                 object obj = ResourceManager.GetObject("8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bn_cadastro {
+            get {
+                object obj = ResourceManager.GetObject("bn_cadastro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +186,16 @@ namespace PROJECO_P2_2.Properties {
         internal static System.Drawing.Bitmap BRTNMENU2 {
             get {
                 object obj = ResourceManager.GetObject("BRTNMENU2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BTN_E {
+            get {
+                object obj = ResourceManager.GetObject("BTN_E", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +416,26 @@ namespace PROJECO_P2_2.Properties {
         internal static System.Drawing.Bitmap PAINEL3 {
             get {
                 object obj = ResourceManager.GetObject("PAINEL3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tela_cadasro {
+            get {
+                object obj = ResourceManager.GetObject("tela cadasro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TELA_DE_LOGIN {
+            get {
+                object obj = ResourceManager.GetObject("TELA DE LOGIN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

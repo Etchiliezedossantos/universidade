@@ -15,3 +15,5 @@ A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova1_matematica_.resources
 A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova2__matematica.resources
 A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.Prova_F1.resources
 A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_PROVAF2.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_cadastro.resources
+A:\NOVO\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_login.resources
