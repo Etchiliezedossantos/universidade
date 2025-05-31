@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculadorNotas.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="DATAS.cs">
       <SubType>Form</SubType>
@@ -156,6 +157,8 @@
     <Compile Include="Prova_F1.Designer.cs">
       <DependentUpon>Prova_F1.cs</DependentUpon>
     </Compile>
+    <Compile Include="questao.cs" />
+    <Compile Include="QuestaoExame.cs" />
     <Compile Include="SessaoUsuario.cs" />
     <Compile Include="SOBRE.cs">
       <SubType>Form</SubType>

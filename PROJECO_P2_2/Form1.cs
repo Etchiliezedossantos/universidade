@@ -115,8 +115,29 @@ namespace PROJECO_P2_2
 
         private void F_principal_Load(object sender, EventArgs e)
         {
-
+            if (EstadoCandidato() == "finalizado")
+            {
+                BTN_iniciarT.Enabled = false;
+                BTN_iniciarT.Text = "Exame já realizado";
+            }
         }
+
+        private string EstadoCandidato()
+        {
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=sistema_exames;Uid=root;Pwd=;"))
+            {
+                conn.Open();
+                string sql = "SELECT Estado FROM candidatos WHERE Id = @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", SessaoUsuario.Id);
+                    object estado = cmd.ExecuteScalar();
+                    return estado != null ? estado.ToString() : "";
+                }
+            }
+        }
+
 
         private void F_principal_FormClosed_1(object sender, FormClosedEventArgs e)
         {

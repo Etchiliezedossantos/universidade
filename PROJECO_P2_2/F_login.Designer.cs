@@ -51,9 +51,11 @@
             // 
             // Nome
             // 
+            this.Nome.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Nome.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.Nome.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nome.Location = new System.Drawing.Point(400, 251);
-            this.Nome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Nome.Margin = new System.Windows.Forms.Padding(4);
             this.Nome.Multiline = true;
             this.Nome.Name = "Nome";
             this.Nome.Size = new System.Drawing.Size(497, 40);
@@ -63,7 +65,7 @@
             // 
             this.PassWord.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassWord.Location = new System.Drawing.Point(400, 357);
-            this.PassWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PassWord.Margin = new System.Windows.Forms.Padding(4);
             this.PassWord.Name = "PassWord";
             this.PassWord.Size = new System.Drawing.Size(497, 30);
             this.PassWord.TabIndex = 3;
@@ -88,7 +90,7 @@
             this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_login.Location = new System.Drawing.Point(545, 446);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(231, 47);
             this.btn_login.TabIndex = 4;
@@ -122,7 +124,7 @@
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "F_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_login";
