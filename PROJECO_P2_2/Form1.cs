@@ -22,6 +22,7 @@ namespace PROJECO_P2_2
        
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //ao terminar a sessao
             // Limpar os dados da sessão
             SessaoUsuario.limpar();
 
@@ -115,11 +116,8 @@ namespace PROJECO_P2_2
 
         private void F_principal_Load(object sender, EventArgs e)
         {
-            if (EstadoCandidato() == "finalizado")
-            {
-                BTN_iniciarT.Enabled = false;
-                BTN_iniciarT.Text = "Exame já realizado";
-            }
+            
+            
         }
 
         private string EstadoCandidato()

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace PROJECO_P2_2
 {
@@ -19,147 +20,27 @@ namespace PROJECO_P2_2
 
         private void F_datas_Load(object sender, EventArgs e)
         {
+            string connStr = "Server=127.0.0.1;Port=3306;Database=sistema_exames;Uid=root;Pwd=;";
+            string sql = "SELECT Id, DataExame, Periodo FROM exames";
 
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                conn.Open();
+                using (MySqlDataAdapter da = new MySqlDataAdapter(sql, conn))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                    dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+
+                    // Formata a data se quiser mostrar como dd/MM/yyyy
+                    dataGridView1.Columns["DataExame"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                }
+            }
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

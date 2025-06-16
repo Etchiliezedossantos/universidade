@@ -59,7 +59,7 @@
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::PROJECO_P2_2.Properties.Resources.terminar_w1;
             this.pictureBox4.Location = new System.Drawing.Point(104, 428);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 36);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,7 +71,7 @@
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::PROJECO_P2_2.Properties.Resources.ICON_sobrew1;
             this.pictureBox3.Location = new System.Drawing.Point(104, 351);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -84,7 +84,7 @@
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::PROJECO_P2_2.Properties.Resources.ICON_tesTW;
             this.pictureBox6.Location = new System.Drawing.Point(104, 276);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(52, 36);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +96,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PROJECO_P2_2.Properties.Resources.USER_W;
             this.pictureBox2.Location = new System.Drawing.Point(104, 201);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -113,10 +113,10 @@
             this.linkLabel4.Location = new System.Drawing.Point(160, 433);
             this.linkLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(166, 26);
+            this.linkLabel4.Size = new System.Drawing.Size(185, 26);
             this.linkLabel4.TabIndex = 3;
             this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Terinar Seçcão";
+            this.linkLabel4.Text = "Terminar Seçcão";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel3
@@ -169,7 +169,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::PROJECO_P2_2.Properties.Resources.logopp;
             this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +228,7 @@
             this.BTN_iniciarT.FlatAppearance.BorderSize = 0;
             this.BTN_iniciarT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_iniciarT.Location = new System.Drawing.Point(617, 530);
-            this.BTN_iniciarT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_iniciarT.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_iniciarT.Name = "BTN_iniciarT";
             this.BTN_iniciarT.Size = new System.Drawing.Size(232, 44);
             this.BTN_iniciarT.TabIndex = 0;
@@ -256,7 +256,7 @@
             this.Controls.Add(this.Link_perfil);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "F_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_principal1";

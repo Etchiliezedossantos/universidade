@@ -31,5 +31,11 @@ namespace PROJECO_P2_2
         {
 
         }
+
+        private void F_perfil_Load(object sender, EventArgs e)
+        {
+            label1.Text = SessaoUsuario.NomeCompleto;
+            
+        }
     }
 }

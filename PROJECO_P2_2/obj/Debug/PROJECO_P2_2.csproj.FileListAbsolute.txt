@@ -69,3 +69,5 @@ C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\bin\Debug\System.Numerics.Vec
 C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\obj\Debug\PROJECO_.BFE45AC0.Up2Date
+C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_principalFuncionario.resources
+C:\Users\johny\OneDrive\Desktop\proj2\PROJECO_P2_2\obj\Debug\PROJECO_P2_2.F_resultadoT.resources

@@ -125,11 +125,23 @@
     <Compile Include="F_login.Designer.cs">
       <DependentUpon>F_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_principalFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_principalFuncionario.Designer.cs">
+      <DependentUpon>F_principalFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_PROVAF2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="F_PROVAF2.Designer.cs">
       <DependentUpon>F_PROVAF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_resultadoT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_resultadoT.Designer.cs">
+      <DependentUpon>F_resultadoT.cs</DependentUpon>
     </Compile>
     <Compile Include="PERFIL.cs">
       <SubType>Form</SubType>
@@ -178,8 +190,14 @@
     <EmbeddedResource Include="F_login.resx">
       <DependentUpon>F_login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_principalFuncionario.resx">
+      <DependentUpon>F_principalFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_PROVAF2.resx">
       <DependentUpon>F_PROVAF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_resultadoT.resx">
+      <DependentUpon>F_resultadoT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PERFIL.resx">
       <DependentUpon>PERFIL.cs</DependentUpon>

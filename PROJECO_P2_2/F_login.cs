@@ -51,13 +51,10 @@ namespace PROJECO_P2_2
 
                             reader.Close(); // Fechar antes de usar nova query
 
-                            F_principal telaHome = new F_principal();
-                            telaHome.Show();
+                            F_principalFuncionario Home = new F_principalFuncionario();
+                            Home.Show();
                             this.Hide();
-                            // Abrir tela de funcionário
-                            //F_HomeFuncionario telaFuncionario = new F_HomeFuncionario(); // tela para o admin
-                            //telaFuncionario.Show();
-                            //this.Hide();
+                            
                             return;
                         }
                     }
@@ -117,6 +114,11 @@ namespace PROJECO_P2_2
         private void F_login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void PassWord_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

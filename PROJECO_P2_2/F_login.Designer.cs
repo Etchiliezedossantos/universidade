@@ -70,6 +70,7 @@
             this.PassWord.Size = new System.Drawing.Size(497, 30);
             this.PassWord.TabIndex = 3;
             this.PassWord.UseSystemPasswordChar = true;
+            this.PassWord.TextChanged += new System.EventHandler(this.PassWord_TextChanged);
             // 
             // label2
             // 
